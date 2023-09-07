@@ -139,7 +139,7 @@ export const LinearAxisTickSeries = (props: LinearAxisTickSeriesProps) => {
       const scaledTick = adjustedScale(tick);
       const position = getPosition(scaledTick);
       const text = ellipsize(fullText, 18);
-      const size = label ? calculateDimensions(text, label.props.fontFamily, label.props.fontSize.toString()) : {};
+      const size = label ? calculateDimensions(text, label.props.fontFamily, label.props.fontSize?.toString()) : {};
 
       return {
         ...position,

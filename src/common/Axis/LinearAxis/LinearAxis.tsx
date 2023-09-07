@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect, createRef, ReactElement, useCallback } from 'react';
-import { LinearAxisTickSeries, LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
-import { ChartDataTypes } from '../../data';
 import { CloneElement } from 'rdk';
+import React, { ReactElement, createRef, useCallback, useEffect, useState } from 'react';
+import { ChartDataTypes } from '../../data';
 import { LinearAxisLine, LinearAxisLineProps } from './LinearAxisLine';
+import { LinearAxisTickSeries, LinearAxisTickSeriesProps } from './LinearAxisTickSeries';
 
 export interface LinearAxisDimensionChanged {
   height?: number;
